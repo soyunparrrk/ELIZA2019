@@ -4,22 +4,53 @@
 <head>
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="wikihow_output.js"></script>
+    <script src="wikihow_output_2.js"></script>
 
     <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
+    <script type="text/javascript">
+        function load_wikihow_titles() {
+            var div = document.getElementById('data');
+            for (var i = 0; i < wikihow_output.length; i++) {
+                var data = "<h1 class='data'>" + wikihow_output[i].title + "</h1>";
+                div.innerHTML = div.innerHTML + data;
+            }
+            var div = document.getElementById('title');
+            for (var i = 0; i < wikihow_output_2.length; i++) {
+                var title = "<h1 class='title'>" + wikihow_output_2[i].url + "</h1>";
+                div.innerHTML = div.innerHTML + title;
+            }
+        }
+    </script>
     <title>ELIZA 2019</title>
 </head>
 
-<body>
-    <div class="line-1 anim-typewriter intro"> ELIZA2019 > WHAT IS YOUR FIRST NAME, DEAR?</div>
-    <div class="line-2 intro">
-        <form action="#">
-            <label for="fname">YOU > </label>
-            <input type="text" name="firstname" class="name" onkeyup="this.value = this.value.toUpperCase();">
-            <input type="submit">
+<body onload="load_wikihow_titles()">
+    <div id="typewriter">
+
+        <p>• ELIZA2019: WHAT IS YOUR NAME, DEAR?<br></p>
+
+        <form>
+            <p>• YOU: __________ <input type="text" name="firstname" class="name" onkeyup="this.value = this.value.toUpperCase();"></p>
         </form>
+
+        <p>• ELIZA2019: HI, SOYUN. NICE TO KNOW YOU. WHAT BROUGHT YOU HERE?<br></p>
+        <p>• YOU: I'D LIKE TO KNOW ABOUT...</p>
+        <div class="wrapper">
+            <div class="choices">LOVE</div>
+            <div class="choices">HUG</div>
+            <div class="choices">KISS</div>
+            <div class="choices">FRIEND</div>
+            <div class="choices">TRUST</div>
+            <div class="choices">TALK</div>
+        </div>
+
     </div>
+    <div id="data">
+    </div>
+    <div id="title"></div>
+
 
 </body>
 

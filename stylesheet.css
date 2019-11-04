@@ -2,54 +2,152 @@ body {
     background-color: #000AFF;
     color: white;
     margin-left: 2%;
+    font-family: "Phase", Arial, serif;
+
 }
 
+a:visited {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
 @font-face {
-font-family: "Phase";
-src: url("Phase.woff") format("woff"),
+    font-family: "Phase";
+    src: url("Phase.woff") format("woff"),
     url("Phase.otf") format("truetype"),
     url("Phase.woff2") format("woff2");
 }
 
 .intro {
+    margin-top: 10%;
     font-size: 50px;
     font-family: "Phase", Arial, serif;
 }
 
-.line-1{
+.line-1 {
     position: relative;
     width: 24em;
     margin-top: 10%;
     border-right: 2px solid white;
-/*    font-size: 180%;*/
     white-space: nowrap;
     overflow: hidden;
-/*    transform: translateY(-50%);    */
 }
 
-.line-2{
+.line-2 {
     display: inline;
 }
 
-input[type=text]{
-        display: inline-block;
-
-    background-color: #000AFF;
-    color: white;
+#typewriter {
+    margin: 0;
     font-size: 50px;
+    color: white;
     font-family: "Phase", Arial, serif;
 }
 
+#typewriter:after {
+    content: "|";
+    animation: blink 500ms linear infinite alternate;
+}
+
+#temporary {
+    margin: 0;
+    font-size: 50px;
+    color: white;
+    font-family: "Phase", Arial, serif;
+}
+
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+input[type=text] {
+    display: inline-block;
+    background-color: #000AFF;
+    color: white;
+    font-size: 40px;
+    font-family: "Phase", Arial, serif;
+    border: 1px solid;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: white;
+}
+
+.button {
+    width: 100px;
+    height: 250px;
+    background-color: white;
+}
+
+
+.wrapper {}
+
+.choices {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    color: #000AFF;
+}
+
+.choices:hover {
+    text-decoration-style: none;
+    background-color: #03fff8;
+    transition-duration: 1s;
+}
+
 /* Animation */
-.anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+
+.anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
 }
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 24em;
+    }
 }
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
 }
