@@ -4,52 +4,548 @@
 <head>
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="wikihow_output.js"></script>
-    <script src="wikihow_output_2.js"></script>
+    <script src="wikihow_output_love.js"></script>
+    <script src="wikihow_output_hug.js"></script>
+    <script src="wikihow_output_kiss.js"></script>
+    <script src="wikihow_output_talk.js"></script>
+    <script src="wikihow_output_trust.js"></script>
+    <script src="wikihow_output_friend.js"></script>
+    <!--    <script src="wikihow_output_2.js"></script>-->
 
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script_2.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script type="text/javascript">
         function load_wikihow_titles() {
-            var div = document.getElementById('data');
-            for (var i = 0; i < wikihow_output.length; i++) {
-                var data = "<h1 class='data'>" + wikihow_output[i].title + "</h1>";
-                div.innerHTML = div.innerHTML + data;
-            }
-            var div = document.getElementById('title');
-            for (var i = 0; i < wikihow_output_2.length; i++) {
-                var title = "<h1 class='title'>" + wikihow_output_2[i].url + "</h1>";
-                div.innerHTML = div.innerHTML + title;
-            }
+            //     var div = document.getElementById('data');
+            //     for (var i = 0; i < wikihow_output.length; i++) {
+            //         var data = "<h1 class='data'>" + wikihow_output[i].title + "</h1>";
+            //         div.innerHTML = div.innerHTML + data;
+            //     }
+            //     var div = document.getElementById('title');
+            //     for (var i = 0; i < wikihow_output_2.length; i++) {
+            //         var title = "<h1 class='title'>" + wikihow_output_2[i].url + "</h1>";
+            //         div.innerHTML = div.innerHTML + title;
+            //     }
         }
+
+        //        function load_wikilove() {
+        //            var div = document.getElementById('data');
+        //
+        //            var love_titles_container = document.createElement("DIV");
+        //            love_titles_container.classList.add("titles");
+        //            love_titles_container.classList.add("love");
+        //
+        //            for (var i = 0; i < wikihow_data_love.length; i++) {
+        //                var title = document.createElement("P");
+        //                title.classList.add("title");
+        //                title.setAttribute("data-index", i);
+        //                title.innerHTML = wikihow_data_love[i].title;
+        //                love_titles_container.append(title);
+        //            }
+        //
+        //            div.append(love_titles_container);
+        //        }
+
+        function load_wikilove() {
+            var div = document.getElementById('data');
+
+            var love_titles_container = document.createElement("DIV");
+            love_titles_container.classList.add("titles");
+            love_titles_container.classList.add("love");
+
+            for (var i = 0; i < wikihow_data_love.length; i++) {
+                var title = document.createElement("DIV");
+                title.classList.add("title");
+                title.setAttribute("data-index", i);
+                title.innerHTML = wikihow_data_love[i].title;
+                love_titles_container.append(title);
+            }
+
+            div.append(love_titles_container);
+        }
+
+//        function load_wikihug() {
+//            var div = document.getElementById('data');
+//
+//            var hug_titles_container = document.createElement("DIV");
+//            hug_titles_container.classList.add("titles");
+//            hug_titles_container.classList.add("hug");
+//
+//            for (var i = 0; i < wikihow_data_hug.length; i++) {
+//                var title = document.createElement("DIV");
+//                title.classList.add("title");
+//                title.setAttribute("data-index", i);
+//                title.innerHTML = wikihow_data_hug[i].title;
+//                hug_titles_container.append(title);
+//            }
+//
+//            div.append(hug_titles_container);
+//        }
+
+        function load_wikikiss() {
+            var div = document.getElementById('data');
+
+            var kiss_titles_container = document.createElement("DIV");
+            kiss_titles_container.classList.add("titles");
+            kiss_titles_container.classList.add("kiss");
+
+            for (var i = 0; i < wikihow_data_kiss.length; i++) {
+                var title = document.createElement("DIV");
+                title.classList.add("title");
+                title.setAttribute("data-index", i);
+                title.innerHTML = wikihow_data_kiss[i].title;
+                kiss_titles_container.append(title);
+            }
+
+            div.append(kiss_titles_container);
+        }
+
+        function load_wikitalk() {
+            var div = document.getElementById('data');
+
+            var talk_titles_container = document.createElement("DIV");
+            talk_titles_container.classList.add("titles");
+            talk_titles_container.classList.add("talk");
+
+            for (var i = 0; i < wikihow_data_talk.length; i++) {
+                var title = document.createElement("DIV");
+                title.classList.add("title");
+                title.setAttribute("data-index", i);
+                title.innerHTML = wikihow_data_talk[i].title;
+                talk_titles_container.append(title);
+            }
+
+            div.append(talk_titles_container);
+        }
+
+        function load_wikitrust() {
+            var div = document.getElementById('data');
+
+            var trust_titles_container = document.createElement("DIV");
+            trust_titles_container.classList.add("titles");
+            trust_titles_container.classList.add("trust");
+
+            for (var i = 0; i < wikihow_data_trust.length; i++) {
+                var title = document.createElement("DIV");
+                title.classList.add("title");
+                title.setAttribute("data-index", i);
+                title.innerHTML = wikihow_data_trust[i].title;
+                trust_titles_container.append(title);
+            }
+
+            div.append(trust_titles_container);
+        }
+
+        function load_wikifriend() {
+            var div = document.getElementById('data');
+
+            var friend_titles_container = document.createElement("DIV");
+            friend_titles_container.classList.add("titles");
+            friend_titles_container.classList.add("friend");
+
+            for (var i = 0; i < wikihow_data_friend.length; i++) {
+                var title = document.createElement("DIV");
+                title.classList.add("title");
+                title.setAttribute("data-index", i);
+                title.innerHTML = wikihow_data_friend[i].title;
+                friend_titles_container.append(title);
+            }
+
+            div.append(friend_titles_container);
+        }
+
     </script>
+
     <title>ELIZA 2019</title>
 </head>
 
-<body onload="load_wikihow_titles()">
-    <div id="typewriter">
+<body onload="load_wikihow_titles(); audio1();">
+    <audio id="audio1" src="sounds/what-is-your-name.mp3" muted></audio>
+    <!-- start of chat -->
+    <div class="typewriter">
+        <div id="typewriter-text">
+            • ELIZA2019: WHAT IS YOUR NAME, DEAR?</div><br>
+        <form class="nameForm">
+            <p>• YOU: <input type="text" name="name" id="myUniqueId" value="" style="text-transform:uppercase"> <button type="button" onclick="nameValue(); audio2();" id="submitButton">SUBMIT</button></p>
 
-        <p>• ELIZA2019: WHAT IS YOUR NAME, DEAR?<br></p>
-
-        <form>
-            <p>• YOU: __________ <input type="text" name="firstname" class="name" onkeyup="this.value = this.value.toUpperCase();"></p>
         </form>
 
-        <p>• ELIZA2019: HI, SOYUN. NICE TO KNOW YOU. WHAT BROUGHT YOU HERE?<br></p>
-        <p>• YOU: I'D LIKE TO KNOW ABOUT...</p>
-        <div class="wrapper">
-            <div class="choices">LOVE</div>
-            <div class="choices">HUG</div>
-            <div class="choices">KISS</div>
-            <div class="choices">FRIEND</div>
-            <div class="choices">TRUST</div>
-            <div class="choices">TALK</div>
+        <p id="greetings" style="text-transform:uppercase"></p>
+        <p id="iWantToKnow">• YOU: I'D LIKE TO KNOW ABOUT...</p>
+        <div id="categories" class="wrapper">
+            <div class="choices" id="love" onclick="load_wikilove(); newTitlesLove(); scrollDown();">LOVE</div>
+<!--            <div class="choices" id="hug" onclick="load_wikihug(); newTitlesHug(); scrollDown();">HUG</div>-->
+            <div class="choices" id="kiss" onclick="load_wikikiss(); newTitlesKiss(); scrollDown(); ">KISS</div>
+            <div class="choices" id="friend" onclick="load_wikifriend(); newTitlesFriend(); scrollDown();">FRIEND</div>
+            <div class="choices" id="trust" onclick="load_wikitrust(); newTitlesTrust(); scrollDown();">TRUST</div>
+            <div class="choices" id="talk" onclick="load_wikitalk(); newTitlesTalk(); scrollDown();">TALK</div>
         </div>
 
     </div>
-    <div id="data">
-    </div>
-    <div id="title"></div>
+
+    <!-- in here all chat progress will be added -->
+    <div id="titles"></div>
+    <div id="data"></div>
+
+
+    <!-- template div that we're hiding and cloning each time steps are appended to div -->
+    <div id="showmoremessage" class="hide" style="display: none;" onclick="showmemore(); scrollDown();">Would you like to learn more?</div>
+
+    <script>
+        // adding functionality to all titles for showing steps and to show the div with "show more" possibility and copies clicked title to div
+
+        function nameValue() {
+                            window.scrollBy(0, 300);
+
+            var typedName = document.getElementById("myUniqueId").value;
+
+            document.getElementById("greetings").innerHTML = "• ELIZA2019: HI, " + typedName + "." + " NICE TO KNOW YOU. WHAT BROUGHT YOU HERE?";
+
+            var showGreetings = document.getElementById("greetings");
+            showGreetings.style.visibility = "visible";
+
+            if ($("#greetings").css("visibility") == "visible") {
+                var showiWantToKnow = document.getElementById("iWantToKnow");
+                showiWantToKnow.style.animation = "cssAnimation 0s 3s forwards";
+                var showCategories = document.getElementById("categories");
+                showCategories.style.animation = "cssAnimation 0s 3s forwards";
+                window.scrollBy(0, 300);
+
+
+            }
+
+
+        }
+
+        var newTitlesLove = function() {
+
+            var allTitles = document.querySelectorAll(".title");
+            var allContents = document.querySelectorAll(".content");
+
+            if (allTitles.length > 0) {
+                allTitles.forEach(function(title) {
+                    title.addEventListener("click", function(event) {
+                        window.scrollTo(0, 1600);
+
+                        var audio4 = new Audio('sounds/read-carefully-step.mp3');
+                        audio4.play();
+
+                        var clickedTitle = event.target.cloneNode(true);
+
+                        clickedTitle.style.textDecoration = "underline";
+                        clickedTitle.style.fontStyle = "italic";
+                        clickedTitle.style.color = "#000AFF";
+                        clickedTitle.style.backgroundColor = "white";
+                        clickedTitle.style.padding = "30px";
+                        clickedTitle.style.marginLeft = "0";
+
+
+                        var containerForSteps = document.createElement("DIV");
+                        containerForSteps.className = "step-wrapper";
+
+                        for (item in wikihow_data_love[this.dataset.index].content) {
+                            var step = document.createElement("DIV");
+                            step.classList.add("content");
+
+                            var contentArray = wikihow_data_love[this.dataset.index].content[item].split('\n');
+
+                            contentArray.forEach(function(sentence, index) {
+                                var paragraph = document.createElement('p');
+                                paragraph.innerHTML = sentence;
+                                step.append(paragraph);
+                            });
+
+                            containerForSteps.append(step);
+                        }
+
+                        document.querySelector("#titles").innerHTML = "";
+                        document.querySelector("#data").append(clickedTitle);
+                        document.querySelector("#data").append(containerForSteps);
+
+                        var messageDiv = document.getElementById("showmoremessage").cloneNode(true);
+                        messageDiv.style.display = 'block';
+                        document.querySelector("#data").append(messageDiv);
+                        window.scrollBy(0, 600);
+
+
+                    });
+                });
+
+            }
+        }
+        
+        
+        var newTitlesKiss = function() {
+
+            var allTitles = document.querySelectorAll(".title");
+            var allContents = document.querySelectorAll(".content");
+
+            if (allTitles.length > 0) {
+                allTitles.forEach(function(title) {
+                    title.addEventListener("click", function(event) {
+                        window.scrollTo(0, 1600);
+
+                        var audio4 = new Audio('sounds/read-carefully-step.mp3');
+                        audio4.play();
+
+                        var clickedTitle = event.target.cloneNode(true);
+
+                        clickedTitle.style.textDecoration = "underline";
+                        clickedTitle.style.fontStyle = "italic";
+                        clickedTitle.style.color = "#000AFF";
+                        clickedTitle.style.backgroundColor = "white";
+                        clickedTitle.style.padding = "30px";
+                        clickedTitle.style.marginLeft = "0";
+
+
+                        var containerForSteps = document.createElement("DIV");
+                        containerForSteps.className = "step-wrapper";
+
+                        for (item in wikihow_data_kiss[this.dataset.index].content) {
+                            var step = document.createElement("DIV");
+                            step.classList.add("content");
+
+                            var contentArray = wikihow_data_kiss[this.dataset.index].content[item].split('\n');
+
+                            contentArray.forEach(function(sentence, index) {
+                                var paragraph = document.createElement('p');
+                                paragraph.innerHTML = sentence;
+                                step.append(paragraph);
+                            });
+
+                            containerForSteps.append(step);
+                        }
+
+                        document.querySelector("#titles").innerHTML = "";
+                        document.querySelector("#data").append(clickedTitle);
+                        document.querySelector("#data").append(containerForSteps);
+
+                        var messageDiv = document.getElementById("showmoremessage").cloneNode(true);
+                        messageDiv.style.display = 'block';
+                        document.querySelector("#data").append(messageDiv);
+                        window.scrollBy(0, 600);
+
+
+                    });
+                });
+
+            }
+        }
+
+                var newTitlesTrust = function() {
+
+            var allTitles = document.querySelectorAll(".title");
+            var allContents = document.querySelectorAll(".content");
+
+            if (allTitles.length > 0) {
+                allTitles.forEach(function(title) {
+                    title.addEventListener("click", function(event) {
+                        window.scrollTo(0, 1600);
+
+                        var audio4 = new Audio('sounds/read-carefully-step.mp3');
+                        audio4.play();
+
+                        var clickedTitle = event.target.cloneNode(true);
+
+                        clickedTitle.style.textDecoration = "underline";
+                        clickedTitle.style.fontStyle = "italic";
+                        clickedTitle.style.color = "#000AFF";
+                        clickedTitle.style.backgroundColor = "white";
+                        clickedTitle.style.padding = "30px";
+                        clickedTitle.style.marginLeft = "0";
+
+
+                        var containerForSteps = document.createElement("DIV");
+                        containerForSteps.className = "step-wrapper";
+
+                        for (item in wikihow_data_trust[this.dataset.index].content) {
+                            var step = document.createElement("DIV");
+                            step.classList.add("content");
+
+                            var contentArray = wikihow_data_trust[this.dataset.index].content[item].split('\n');
+
+                            contentArray.forEach(function(sentence, index) {
+                                var paragraph = document.createElement('p');
+                                paragraph.innerHTML = sentence;
+                                step.append(paragraph);
+                            });
+
+                            containerForSteps.append(step);
+                        }
+
+                        document.querySelector("#titles").innerHTML = "";
+                        document.querySelector("#data").append(clickedTitle);
+                        document.querySelector("#data").append(containerForSteps);
+
+                        var messageDiv = document.getElementById("showmoremessage").cloneNode(true);
+                        messageDiv.style.display = 'block';
+                        document.querySelector("#data").append(messageDiv);
+                        window.scrollBy(0, 600);
+
+
+                    });
+                });
+
+            }
+        }
+                
+                        var newTitlesFriend = function() {
+
+            var allTitles = document.querySelectorAll(".title");
+            var allContents = document.querySelectorAll(".content");
+
+            if (allTitles.length > 0) {
+                allTitles.forEach(function(title) {
+                    title.addEventListener("click", function(event) {
+                        window.scrollTo(0, 1600);
+
+                        var audio4 = new Audio('sounds/read-carefully-step.mp3');
+                        audio4.play();
+
+                        var clickedTitle = event.target.cloneNode(true);
+
+                        clickedTitle.style.textDecoration = "underline";
+                        clickedTitle.style.fontStyle = "italic";
+                        clickedTitle.style.color = "#000AFF";
+                        clickedTitle.style.backgroundColor = "white";
+                        clickedTitle.style.padding = "30px";
+                        clickedTitle.style.marginLeft = "0";
+
+
+                        var containerForSteps = document.createElement("DIV");
+                        containerForSteps.className = "step-wrapper";
+
+                        for (item in wikihow_data_friend[this.dataset.index].content) {
+                            var step = document.createElement("DIV");
+                            step.classList.add("content");
+
+                            var contentArray = wikihow_data_friend[this.dataset.index].content[item].split('\n');
+
+                            contentArray.forEach(function(sentence, index) {
+                                var paragraph = document.createElement('p');
+                                paragraph.innerHTML = sentence;
+                                step.append(paragraph);
+                            });
+
+                            containerForSteps.append(step);
+                        }
+
+                        document.querySelector("#titles").innerHTML = "";
+                        document.querySelector("#data").append(clickedTitle);
+                        document.querySelector("#data").append(containerForSteps);
+
+                        var messageDiv = document.getElementById("showmoremessage").cloneNode(true);
+                        messageDiv.style.display = 'block';
+                        document.querySelector("#data").append(messageDiv);
+                        window.scrollBy(0, 600);
+
+
+                    });
+                });
+
+            }
+        }
+                        
+                                var newTitlesTalk = function() {
+
+            var allTitles = document.querySelectorAll(".title");
+            var allContents = document.querySelectorAll(".content");
+
+            if (allTitles.length > 0) {
+                allTitles.forEach(function(title) {
+                    title.addEventListener("click", function(event) {
+                        window.scrollTo(0, 1600);
+
+                        var audio4 = new Audio('sounds/read-carefully-step.mp3');
+                        audio4.play();
+
+                        var clickedTitle = event.target.cloneNode(true);
+
+                        clickedTitle.style.textDecoration = "underline";
+                        clickedTitle.style.fontStyle = "italic";
+                        clickedTitle.style.color = "#000AFF";
+                        clickedTitle.style.backgroundColor = "white";
+                        clickedTitle.style.padding = "30px";
+                        clickedTitle.style.marginLeft = "0";
+
+
+                        var containerForSteps = document.createElement("DIV");
+                        containerForSteps.className = "step-wrapper";
+
+                        for (item in wikihow_data_talk[this.dataset.index].content) {
+                            var step = document.createElement("DIV");
+                            step.classList.add("content");
+
+                            var contentArray = wikihow_data_talk[this.dataset.index].content[item].split('\n');
+
+                            contentArray.forEach(function(sentence, index) {
+                                var paragraph = document.createElement('p');
+                                paragraph.innerHTML = sentence;
+                                step.append(paragraph);
+                            });
+
+                            containerForSteps.append(step);
+                        }
+
+                        document.querySelector("#titles").innerHTML = "";
+                        document.querySelector("#data").append(clickedTitle);
+                        document.querySelector("#data").append(containerForSteps);
+
+                        var messageDiv = document.getElementById("showmoremessage").cloneNode(true);
+                        messageDiv.style.display = 'block';
+                        document.querySelector("#data").append(messageDiv);
+                        window.scrollBy(0, 600);
+
+
+                    });
+                });
+
+            }
+        }
+
+
+
+        
+
+
+        function scrollDown() {
+            window.scrollBy(0, 800);
+        }
+
+
+        function firstAudio() {
+            var audio1 = new Audio('sounds/what-is-your-name.mp3');
+            audio1.play();
+        }
+
+        function audio1() {
+            document.getElementById('audio1').play();
+            document.getElementById('audio1').muted = false;
+        }
+
+        function audio2() {
+            var audio2 = new Audio('sounds/hi-its-nice-to-know-you.mp3');
+            audio2.play();
+        }
+
+
+
+        // add categories again to bottom of div to select new one for more wiki
+        function showmemore() {
+            var categoriesDiv = document.getElementById("categories").cloneNode(true);
+            categoriesDiv.style.animation = "cssAnimation 0s 0s forwards";
+            document.getElementById("data").append(categoriesDiv);
+            var audio3 = new Audio('sounds/would-you-like-to-learn-more.mp3');
+            audio3.play();
+            // // var showCategories = document.getElementById("categories");
+        }
+        
+        
+
+
+        
+
+    </script>
 
 
 </body>

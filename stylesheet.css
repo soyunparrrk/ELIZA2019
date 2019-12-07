@@ -1,9 +1,39 @@
+html {
+    scroll-behavior: smooth;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 body {
     background-color: #000AFF;
     color: white;
-    margin-left: 2%;
+/*    margin-left: 2%;*/
     font-family: "Phase", Arial, serif;
+            margin-top: 50px;
 
+    
+}
+
+#submitButton {
+      background-color: white; 
+  border: none;
+  color: #000AFF;
+/*  padding: 15px 35px;*/
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+font-family: "Phase", Arial, serif;
+  font-size: 40px;
+}
+
+#submitButton:hover {
+    text-decoration-style: none;
+    background-color: #03fff8;
+    transition-duration: 0.5s;
+}
+
+img {
+    display: none;
 }
 
 a:visited {
@@ -41,6 +71,7 @@ a {
     display: inline;
 }
 
+/*
 #typewriter {
     margin: 0;
     font-size: 50px;
@@ -52,6 +83,7 @@ a {
     content: "|";
     animation: blink 500ms linear infinite alternate;
 }
+*/
 
 #temporary {
     margin: 0;
@@ -103,22 +135,48 @@ input[type=submit] {
     color: white;
 }
 
-.button {
-    width: 100px;
-    height: 250px;
-    background-color: white;
+
+
+.step-wrapper {
+/*    display: inline-block;*/
 }
 
+.content {
+    border: 1px solid white;
+    font-size: 30px;
+    width: 90%;
+    height: 400px;
+    overflow: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
 
-.wrapper {}
+.content::-webkit-scrollbar:vertical {
+    width: 15px;
+}
+
+.content::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.content::-webkit-scrollbar-thumb {
+/*    border-radius: 8px;*/
+    border: 1px solid white; /* should match background, can't be transparent */
+    background-color: #000AFF;
+}
 
 .choices {
     display: inline-block;
     text-align: center;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     background-color: white;
     color: #000AFF;
+    font-size: 30px;
+    padding: 60px;
+    margin-bottom: 10px;   
 }
 
 .choices:hover {
@@ -127,8 +185,31 @@ input[type=submit] {
     transition-duration: 1s;
 }
 
+.titles {
+    font-size: 50px;
+}
+
+.title {
+    font-size: 50px;
+        margin-left: 2%;
+
+
+}
+
+p {
+        margin-left: 2%;
+
+}
+
+#showmoremessage {
+    font-size: 50px;
+    font-style: italic;
+    margin: 50px;
+}
+
 /* Animation */
 
+/*
 .anim-typewriter {
     animation: typewriter 4s steps(44) 1s 1 normal both,
     blinkTextCursor 500ms steps(44) infinite normal;
@@ -150,4 +231,89 @@ input[type=submit] {
     to {
         border-right-color: transparent;
     }
+}
+*/
+
+.typewriter {
+	display: inline-block;
+
+    margin: 0;
+    color: white;
+    font-family: "Phase", Arial, serif;
+    font-size: 50px;
+
+}
+
+#typewriter-text {
+    display: inline-block;
+  	overflow: hidden;
+ 	animation: typing 2s steps(30, end);
+
+    white-space: nowrap;
+/*    border-right: 4px solid white;*/
+    box-sizing: border-box;
+        margin-left: 2%;
+
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: white; 
+    }
+}
+
+.nameForm {
+      animation: cssAnimation 0s 2s forwards;
+  visibility: hidden;
+}
+
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+
+
+#iWantToKnow {
+    visibility: hidden;
+}
+
+.wrapper {
+    visibility: hidden;
+}
+
+#greetings {
+    visibility: hidden;
+
+
+}
+
+#categories {
+        visibility: hidden;
+        margin-left: 2%;
+
+}
+
+.step-wrapper {
+        margin-left: 2%;
+
+}
+
+#data {
+    align-content: center;
+
+}
+
+#showmoremessage {
+    text-decoration: underline;
 }
