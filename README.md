@@ -1,6 +1,6 @@
 # ELIZA2020
 
-![ELIZA2020](images/ELIZA2020.png)
+![ELIZA2020](images/ELIZA2020.jpg)
 
 
 ### Welcome to a phycological help center created by Wikihow technology.
