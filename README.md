@@ -11,8 +11,8 @@ Using *wikiHow* — an online wiki-style community consisting of an extensive da
 
 ### Colophon
 
-Design and development by Soyun Park at Royal Academy of Art, The Hague with the guidance of Martijn de Heer as part of Coding classes. <br>
-Typeface Phase is by Elias Hanzer. <br>
+Design and development by [Soyun Park](http://soyunparrrk.com/) at Royal Academy of Art, The Hague with the guidance of [Martijn de Heer](http://www.martijndeheer.nl/) as part of Coding class. <br>
+Typeface Phase is by [Elias Hanzer](https://www.eliashanzer.com). <br>
 
-http://soyunparrrk.com/
+
 
