@@ -10,42 +10,8 @@
     <script src="wikihow_output_talk.js"></script>
     <script src="wikihow_output_trust.js"></script>
     <script src="wikihow_output_friend.js"></script>
-    <!--    <script src="wikihow_output_2.js"></script>-->
-
-    <script type="text/javascript" src="script_2.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script type="text/javascript">
-        function load_wikihow_titles() {
-            //     var div = document.getElementById('data');
-            //     for (var i = 0; i < wikihow_output.length; i++) {
-            //         var data = "<h1 class='data'>" + wikihow_output[i].title + "</h1>";
-            //         div.innerHTML = div.innerHTML + data;
-            //     }
-            //     var div = document.getElementById('title');
-            //     for (var i = 0; i < wikihow_output_2.length; i++) {
-            //         var title = "<h1 class='title'>" + wikihow_output_2[i].url + "</h1>";
-            //         div.innerHTML = div.innerHTML + title;
-            //     }
-        }
-
-        //        function load_wikilove() {
-        //            var div = document.getElementById('data');
-        //
-        //            var love_titles_container = document.createElement("DIV");
-        //            love_titles_container.classList.add("titles");
-        //            love_titles_container.classList.add("love");
-        //
-        //            for (var i = 0; i < wikihow_data_love.length; i++) {
-        //                var title = document.createElement("P");
-        //                title.classList.add("title");
-        //                title.setAttribute("data-index", i);
-        //                title.innerHTML = wikihow_data_love[i].title;
-        //                love_titles_container.append(title);
-        //            }
-        //
-        //            div.append(love_titles_container);
-        //        }
-
         function load_wikilove() {
             var div = document.getElementById('data');
 
@@ -64,23 +30,6 @@
             div.append(love_titles_container);
         }
 
-//        function load_wikihug() {
-//            var div = document.getElementById('data');
-//
-//            var hug_titles_container = document.createElement("DIV");
-//            hug_titles_container.classList.add("titles");
-//            hug_titles_container.classList.add("hug");
-//
-//            for (var i = 0; i < wikihow_data_hug.length; i++) {
-//                var title = document.createElement("DIV");
-//                title.classList.add("title");
-//                title.setAttribute("data-index", i);
-//                title.innerHTML = wikihow_data_hug[i].title;
-//                hug_titles_container.append(title);
-//            }
-//
-//            div.append(hug_titles_container);
-//        }
 
         function load_wikikiss() {
             var div = document.getElementById('data');
@@ -174,7 +123,7 @@
         <p id="iWantToKnow">• YOU: I'D LIKE TO KNOW ABOUT...</p>
         <div id="categories" class="wrapper">
             <div class="choices" id="love" onclick="load_wikilove(); newTitlesLove(); scrollDown();">LOVE</div>
-<!--            <div class="choices" id="hug" onclick="load_wikihug(); newTitlesHug(); scrollDown();">HUG</div>-->
+
             <div class="choices" id="kiss" onclick="load_wikikiss(); newTitlesKiss(); scrollDown(); ">KISS</div>
             <div class="choices" id="friend" onclick="load_wikifriend(); newTitlesFriend(); scrollDown();">FRIEND</div>
             <div class="choices" id="trust" onclick="load_wikitrust(); newTitlesTrust(); scrollDown();">TRUST</div>
@@ -195,7 +144,7 @@
         // adding functionality to all titles for showing steps and to show the div with "show more" possibility and copies clicked title to div
 
         function nameValue() {
-                            window.scrollBy(0, 300);
+            window.scrollBy(0, 300);
 
             var typedName = document.getElementById("myUniqueId").value;
 
@@ -273,8 +222,8 @@
 
             }
         }
-        
-        
+
+
         var newTitlesKiss = function() {
 
             var allTitles = document.querySelectorAll(".title");
@@ -332,7 +281,7 @@
             }
         }
 
-                var newTitlesTrust = function() {
+        var newTitlesTrust = function() {
 
             var allTitles = document.querySelectorAll(".title");
             var allContents = document.querySelectorAll(".content");
@@ -388,8 +337,8 @@
 
             }
         }
-                
-                        var newTitlesFriend = function() {
+
+        var newTitlesFriend = function() {
 
             var allTitles = document.querySelectorAll(".title");
             var allContents = document.querySelectorAll(".content");
@@ -445,8 +394,8 @@
 
             }
         }
-                        
-                                var newTitlesTalk = function() {
+
+        var newTitlesTalk = function() {
 
             var allTitles = document.querySelectorAll(".title");
             var allContents = document.querySelectorAll(".content");
@@ -505,7 +454,7 @@
 
 
 
-        
+
 
 
         function scrollDown() {
@@ -539,11 +488,6 @@
             audio3.play();
             // // var showCategories = document.getElementById("categories");
         }
-        
-        
-
-
-        
 
     </script>
 

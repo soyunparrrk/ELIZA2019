@@ -1,1 +1,0 @@
-var wikihow_output = []
