@@ -3,7 +3,7 @@
 ![ELIZA2020](images/ELIZA2020.jpg)
 
 
-### Welcome to a phycological help center created by Wikihow technology.
+### Welcome to a phycological help center created with Wikihow technology.
 
 Due to the rapid change of the way of communications, the new generations seek education for human interaction. Eliza2020 is evolved from the one built in 1960's to sort out this situation.
 
@@ -15,7 +15,7 @@ Please turn your audio on :sound: for the best experience.
 
 ### Colophon
 
-Design and development by [Soyun Park](http://soyunparrrk.com/) at Royal Academy of Art, The Hague with the guidance of [Martijn de Heer](http://www.martijndeheer.nl/) as part of Coding class. <br>
+Design and development by [Soyun Park](http://soyunparrrk.com/) at Royal Academy of Art, in The Hague with the guidance of [Martijn de Heer](http://www.martijndeheer.nl/) as part of the Coding class. <br>
 Typeface Phase is by [Elias Hanzer](https://www.eliashanzer.com). <br>
 
 
