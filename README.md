@@ -3,9 +3,9 @@
 ![ELIZA2020](images/ELIZA2020.jpg)
 
 
-### Welcome to a phycological help center created with Wikihow technology.
+### Welcome to a phycological help center created with wikiHow technology.
 
-Due to the rapid change of the way of communications, the new generations seek education for human interaction. Eliza2020 is evolved from the one built in 1960's to sort out this situation.
+Due to the rapid change of the way of communications, the new generations seek education for human interaction. ELIZA2020 is evolved from the one built in 1960's to sort out this situation.
 
 Using *wikiHow* — an online wiki-style community consisting of an extensive database of how-to guides — ELIZA2020 is going to tell you how to handle your relationships and emotions even step by step. 
 
